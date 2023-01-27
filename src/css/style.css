@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@400;600&family=Viaoda+Libre&display=swap');
+
+body{
+    font-family: 'Halant', serif;
+    font-weight: 400;
+    font-size: 18px;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    height: 70%;
+}
+
+.header #logo{
+    font-family: 'Viaoda Libre', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.header .menu{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.header .subtitle{
+    background-image: url(../images/spring-flowers.png);
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 10%;
+}
+
+.header .subtitle h3{
+    font-size: 30px;
+}
+
+.header .subtitle p{
+    font-size: 20px;
+}
+
+.btn{
+    font-size: 15px;
+    border: 1px solid #519657;
+    color: #519657;
+    border-radius: 3px;
+    padding: 5px;
+    transition: 0.1s ease-in;
+}
+
+.btn:hover{
+    color: #aebfbe;
+    border: 1px solid #aebfbe;
+}
+
+.paragraph{
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #000;
+    margin: 2%;
+}
+
+.services{
+    background-image: url(../images/green-plants.png);
+    max-height: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00251a;
+}
+
+.services .text-service{
+    width: 700px;
+}
+
+.services .info{
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 3%;
+    gap: 25px;
+}
+
+.services .info .square{
+    background-color: aliceblue;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #255d00;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.info .square .text-square{
+    font-size: 15px;
+    padding: 5%;
+}
+
+.order{
+    display: flex;
+    height: 60%;
+    margin: 3% 4%;
+}
+
+.order .text-order{
+    display: flex;
+    flex-direction: column;
+    margin: 0 3%;
+    padding: 2%;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    text-align: center;
+}
+
+.order .text-order .btn-create{
+    border: 1px solid #8bc34a;
+    border-radius: 2px;
+    background-color: #8bc34a;
+    padding: 5px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+.order .text-order .btn-create:hover{
+    background-color: #fff;
+    border: 1px solid #8bc34a;
+}
+
+.faq{
+    background-image: url(../images/faq-image.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90%;
+}
+
+.faq .title-faq{
+    text-align: center;
+    padding: 1%;
+    margin: 2% 2%;
+    border: 1px solid #000;
+}
+
+.faq .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq .items .item{
+    background-color: #fff;
+    box-shadow: 10px 5px 5px #B0BEC5;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    padding: 2%;
+    width: 600px;
+    max-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.items .item .question{
+    font-size: 16px;
+    position: relative;
+
+}
+.items .item .question::after{
+    content: url(../images/arrow-down.png);
+    position: absolute;
+    right: 2%;
+}
+
+.items .item .answer{
+    font-size: 14px;
+    display: none;
+}
+
+.items .item.active{
+    max-height: 100px;
+    padding-top: 1%;
+}
+
+.items .item.active .answer{
+    display: block;
+}
+
+.items .item.active .question{
+    color: #00695C;
+    margin-top: 3%;
+}
+
+.items .item.active .question::after{
+    content: url(../images/arrow-down-open.png);
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    padding: 2%;
+    width: 100%;
+    text-align: right;
+    border: 1px solid #000;
+}
+
+.footer .subscribe{
+    text-align: center;
+    font-size: 15px;
+    color: #004D40;
+    margin-left: 5%;
+}
+
+.footer .subscribe #input-email{
+   padding: 2%;
+   margin: 1% 2%;
+   box-shadow: 10px 5px 5px #37474F;
+   border: none;
+}
+
+#input-email::placeholder{
+    text-align: center;
+}
+
+.footer .subscribe #btn-submit{
+    padding: 2%;
+    margin: 2%;
+}
+
+.footer .social-media a:hover{
+    color: #004D40;
+    padding-top: 2%;
+}

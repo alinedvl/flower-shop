@@ -1,0 +1,84 @@
+@media(max-width: 1200px){
+    .order{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+        margin-bottom: 2%;
+        overflow: hidden;
+    }
+    .order img{
+        height: 70%;
+    }
+
+    .services{
+        max-height: 65%;
+    }
+    
+    .services .text-service{
+        max-width: 500px;
+    }
+
+    .faq{
+        max-height: 80%;
+    }
+
+    .faq .items .item{
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 500px){
+    .header .subtitle{
+        color: #519657;
+        background-position: bottom;
+        text-align: right;
+    }
+
+    .header .subtitle h3{
+        width: 300px;
+    }
+    
+    .order img{
+        display: none;
+    }
+
+    .services .text-service{
+        max-width: 300px;
+    }
+
+    .order{
+        max-height: 500px;
+    }
+
+    .faq{
+        max-height: 650px;
+    }
+
+    .faq .items .item{
+        max-width: 370px;
+    }
+
+    .faq .items .item .answer{
+        overflow-y: scroll;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 376px){
+    .services .info .square{
+        height: 350px;
+    }
+    
+    .services .info .square .text-square{
+        overflow-y: scroll;
+        height: 220px;
+    }
+
+    .faq .items .item{
+        max-width: 320px;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+}
